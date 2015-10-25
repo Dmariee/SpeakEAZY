@@ -1,0 +1,24 @@
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+ul.nav{
+	font-family: 'Limelight', cursive;
+}
+.jumbotron{
+	text-align:center;
+	color: white;
+	background-image: url(http://cdn1.walkerartcenter.org/static/cache/9a/9a1fb989a815492ec1644251b492d5b3.jpg);
+}
+.jumbotron h1{
+	margin-top: 0px;
+	padding: 20px 10px 0px 40px;
+}
+.btn-lg{
+	font-size: 36px;
+	font-family: 'Limelight', cursive;
+}
+.jumbotron p{
+	font-size: 40px;
+	font-family: 'Limelight', cursive;
+}
