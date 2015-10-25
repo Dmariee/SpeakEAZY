@@ -1,0 +1,91 @@
+<div class="container">
+			<div id="splitlayout" class="splitlayout">
+				<div class="intro">
+					<div class="side side-left">
+						<header class="codropsheader clearfix">
+							<nav>
+							
+							</nav>
+						</header>
+						<div class="intro-content">
+							<h1><span>Make A Stand! </span><span>Start A Petition | Start A Movement | ETC</span></h1>
+						</div>
+						<div class="overlay"></div>
+					</div>
+					<div class="side side-right">
+						<div class="intro-content">
+							<h1><span>Take A Stand! </span><span>Sign A Petition | Join A Movement | ETC</span></h1>
+						</div>
+						<div class="overlay"></div>
+					</div>
+				</div><!-- /intro -->
+				<div class="page page-right">
+					<div class="page-inner">
+						<section>
+							<md-list ng-repeat="action in actionTypes">
+							   <md-list-item>
+							    	<div class="{{action.icon}}">
+							    		<label>{{action.name}}</label>
+							    	</div>
+							   </md-list-item>
+							</md-list> 
+						</section>
+					</div><!-- /page-inner -->
+				</div><!-- /page-right -->
+				<div class="page page-left">
+					<div class="page-inner">
+						<form name="MakeAStand">
+							<section>
+								<h2>Start a(n)...</h2>
+								<div class="row">
+									<div class="col-md-4">      
+										<md-checkbox aria-label="petition"
+								             name="petition" 
+								             ng-model="showPetition">
+										  <p> Petition </p>
+										</md-checkbox>
+									</div>
+									<div class="col-md-4">      
+										<md-checkbox aria-label="Discussion"
+								             name="Discussion" 
+								             ng-model="showDiscussion">
+										  <p>Discussion</p>
+										</md-checkbox>
+									</div>
+									<div class="col-md-4">      
+										<md-checkbox aria-label="Event"
+								             name="Event" 
+								             ng-model="showEvent">
+										  <p>Event</p>
+										</md-checkbox>
+									</div>
+					          	</div>
+							</section>
+							<section ng-show="showPetition">
+								<h2>Create A Petition</h2>
+								<md-input-container flex>
+						          <label>Title: </label>
+						          <input ng-model="petitionForm.title">
+						        </md-input-container>
+						        <md-input-container flex>
+						          <label>Link: </label>
+						          <input ng-model="petitionForm.link" type="url">
+						        </md-input-container>
+						        <md-input-container flex>
+							        <label>Description: </label>
+							        <textarea ng-model="petitionForm.description" columns="4" md-maxlength="150"
+							        style="text-align:right"></textarea>
+						      	</md-input-container>
+							</section>
+							<a href="#" class="button button-right" 
+							   title="back to intro"
+							   ng-click="pushPetitions()">
+								Post Your Stand
+							</a>
+						</form>
+					</div><!-- /page-inner -->
+				</div><!-- /page-left -->
+				<a href="#" class="back back-right" title="back to intro">&rarr;</a>
+				<a href="#" class="back back-left" title="back to intro">&larr;</a>
+			</div><!-- /splitlayout -->
+		</div><!-- /container -->
