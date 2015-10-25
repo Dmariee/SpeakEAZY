@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<base href="http://www.bluelight.org/vb/" /><!--[if IE]></base><![endif]-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/yuiloader-dom-event/yuiloader-dom-event.js"></script>
+<link rel="stylesheet" type="text/css" href="css.php?styleid=51&amp;langid=1&amp;d=1442808522&amp;td=ltr&amp;sheet=bbcode.css,editor.css,popupmenu.css,reset-fonts.css,vbulletin.css,vbulletin-chrome.css,vbulletin-formcontrols.css," />
+<link rel="stylesheet" type="text/css" href="css.php?styleid=51&amp;langid=1&amp;d=1442808522&amp;td=ltr&amp;sheet=attachment.css,lightbox.css" />
+<script type="text/javascript" src="clientscript/vbulletin-editor.js?v=422"></script>
+<title>SpeakEasy</title>
+<link rel="stylesheet" type="text/css" href="css.php?styleid=51&amp;langid=1&amp;d=1442808522&amp;td=ltr&amp;sheet=additional.css" />
+<div id="pagetitle">
+  <h1>Post New Thread</h1>
+  <p class="description">Forum: <a href="forums/153-Anonymous-Posting">Anonymous Posting</a></p>
+</div>
+
+
+<script>
+function validate() {
+  var title = document.getElementById("Title").value;
+  var tags = document.getElementById("Relevant_Tags").value;
+  var message = document.getElementById("Message").value;
+
+  alert(title + " " + tags + " " + message);
+}
+</script>
+
+
+<form class="vbform block" action="javascript:validate()" method="post" name="vbform">
+
+  <h2 class="blockhead">Your Message</h2>
+  <div class="blockbody formcontrols">
+  <div class="section">
+    <div class="blockrow">
+      <label for="subject" class="full">Title:</label>
+      <input type="text" id="Title" maxlength="85" /><br><br>
+      <label for="subject" class="full">Relevant tags:</label>
+      <input type="text" id="Relevant_Tags" placeholder="Tag1, Tag2, Tag3, etc..." maxlength="85"/>
+    </div>
+
+  <div class="editor">
+    <div class="editor_textbox_container">
+    <div class="editor_textbox ">
+     <textarea id="Message" rows="8" cols="60" tabindex="1"
+      placeholder="Provide a description of the issue you would like to discuss. Include locations, relevant links, and areas for social change."></textarea>
+     Include posters, flyers, or pictures: <INPUT TYPE="file" NAME="attachedfile" MAXLENGTH=50 ALLOW="text/*" >
+    </div>
+  </div>
+
+  <div class="blockfoot actionbuttons">
+    <input type="submit" name="sbutton" id="vB_Editor_001_save" value="Submit New Thread" tabindex="1" />
+  </div>
+
+</form>
+</html>
